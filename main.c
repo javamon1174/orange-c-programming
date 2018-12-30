@@ -378,8 +378,61 @@ int main() {
 }
 */
 /* chapter 17 -------------------------------------------------------------------------------------------
-int main() {
-    printf("Hello, World!\n");
+int MaxAndMin(int arr[], int count, int **maxDptr, int **minDptr) { // example 17-1
+    for (int i = 0; i < count; i++)
+    {
+        if (*maxDptr < &arr[i]) {
+            *maxDptr = &arr[i];
+        }
+        if (*minDptr > &arr[i]) {
+            *minDptr = &arr[i];
+        }
+        printf("배열[%d]의 주소값 : %d\n", i, &arr[i]);
+    }
     return 0;
+}
+
+int main() {
+    // example 17-1
+    int * maxPtr;
+    int * minPtr;
+    int arr[5];
+
+    maxPtr = minPtr = &arr[0];
+
+    MaxAndMin(arr, (sizeof(arr) / sizeof(int)), &maxPtr, &minPtr);
+    printf("max : %d, min : %d", maxPtr, minPtr);
+}
+*/
+/* chapter 18 -------------------------------------------------------------------------------------------
+
+int main() {
+//     example 18-1-1
+     int ** ptr
+     int * ptr2[5] => int (*ptr2)[5]
+
+//     example 18-1-2
+     void SimpleFuncOne(int ** ptr1, int ** ptr2) => (int * ptr1, int * ptr2)
+     void SimpleFuncTwo(int (* ptr3)[4], int (* ptr4)[4])
+
+//     example 18-1-3
+     ComplexFuncOne(int **ptr, int (*ptr2)[5]) => (int **ptr, int * (*ptr2)[5])
+     ComplexFuncTwo(int (**ptr3)[5], int (**ptr4)[3][5]) => (int *** ptr3, int ***(*ptr4)[5])
+
+//     example 18-1-4, 17-1-5 pass
+}
+*/
+
+
+/* chapter 20 -------------------------------------------------------------------------------------------
+*/
+int main() {
+    // example 20-1
+
+}
+
+
+/* chapter 0 -------------------------------------------------------------------------------------------
+int main() {
 }
 */
