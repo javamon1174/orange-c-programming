@@ -136,23 +136,16 @@ int getDiceNumber(void);
 int stoneGame(void);
 int baseBallGame(void);
 
-int main() {
-    // example 20-3 난수
-//    getRandNum();
+int main()
+{
 
-    // example 20-4-1 난수 응용
-//    getRandEXNum();
+    getRandNum(); // example 20-3 난수
+    getRandEXNum(); // example 20-4-1 난수 응용
+    getDiceNumber(); // example 20-4-2 주사위
+    stoneGame(); // example 20-5 가위바위보 게임
+    baseBallGame(); // example 20-6 야구 게임
 
-    // example 20-4-2 주사위
-//    getDiceNumber();
-
-    // example 20-5 가위바위보 게임
-//    stoneGame();
-
-    // example 20-6 야구 게임
-//    baseBallGame(); // 꿀잼
 }
-
 int getRandEXNum() { // example 20-4 난수씨앗
     int lenth = 0;
     srand((int) time(NULL));
@@ -162,7 +155,6 @@ int getRandEXNum() { // example 20-4 난수씨앗
     }
     return 0;
 }
-
 
 int getDiceNumber() { // example 20-5 주사위
     int lenth = 0;
@@ -174,7 +166,7 @@ int getDiceNumber() { // example 20-5 주사위
     return 0;
 }
 
-int stoneGame() {
+int stoneGame() { // example 20-5 가위바위보 게임
     int com, you, res, wins = 0, lose =0, same = 0;
 
     for (int i = 0; i < 7; ++i) { // example 20-5 가위바위보 게임
