@@ -9,4 +9,8 @@
 /Users/javamon/study/orange-c-programming/main.c
 stdio.h
 -
+stdlib.h
+-
+time.h
+-
 
