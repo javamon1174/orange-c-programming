@@ -77,7 +77,8 @@ int printArr(int arr[4][4]) { // example 20-1
         4. 이를 만족하기 위해서 두개의 for 중간에 while문을 빠져나오는 break 문이 존재한다.
         5. 변수들의 초기값은 애초부터 정해서 풀려고 하지말고 직접 구현하면서 필요한 초기값을 대입하는 것이 꿀팁.
         6. swich 변수를 통해 배열의 위치를 정하는 것이 포인트!
-'''c
+
+```c
 int dalPang(void);
 
 int main() {
@@ -125,11 +126,11 @@ int dalPang() {
         printf("\n");
     }
 }
-'''
+```
 
 ### 그외 문제는 10분 내외면 충분이 쉽게 풀리는 문제들이라 코드만 포함합니다.
 => 야구게임은 구현하고 해보면 응근 꿀잼이라는 사실은 안비밀
-'''c
+```c
 int getRandEXNum(void);
 int getDiceNumber(void);
 
@@ -230,4 +231,4 @@ int baseBallGame() { <!--// example 20-6 base ball-->
     }
     return 0;
 }
-'''
+```
