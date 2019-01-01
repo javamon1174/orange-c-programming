@@ -17,7 +17,7 @@ int rotateArr(arr[4][4]);
 int printArr(arr[4][4]);
 
 int main() {
-    // example 20-1 배열 회전
+    !--// example 20-1 배열 회전-->
     int static arr[4][4] =
             {
                 {1, 2, 3, 4},
@@ -26,29 +26,29 @@ int main() {
                 {13, 14, 15, 16}
             };
 
-    printArr(arr); // init print
+    printArr(arr); <!--// init print-->
 
-    rotateArr(arr); // turn right 90
-    printArr(arr);  // init print
+    rotateArr(arr); <!--// turn right 90-->
+    printArr(arr);  <!--// init print-->
 
-    rotateArr(arr); // turn right 180
-    printArr(arr);  // init print
+    rotateArr(arr); <!--// turn right 180-->
+    printArr(arr);  <!--// init print-->
 
-    rotateArr(arr); // turn right 270
-    printArr(arr);  // init print
+    rotateArr(arr); <!--// turn right 270-->
+    printArr(arr);  <!--// init print-->
 }
 
-int rotateArr(int arr[4][4]) { // example 20-1
+int rotateArr(int arr[4][4]) { <!--// example 20-1-->
     int i, j;
     int t_arr[4][4];
 
-    // 배열 90도 로테이트
+    <!--// 배열 90도 로테이트-->
     for (i = 0; i < 4; ++i) {
         for (j = 0; j < 4; ++j) {
             t_arr[i][j] = arr[3-j][i];
         }
     }
-    // static 배열에 로테이트 배열 대입
+    <!--// static 배열에 로테이트 배열 대입-->
     for (int k = 0; k < 4; ++k) {
         for (int l = 0; l < 4; ++l) {
             arr[k][l] = t_arr[k][l];
@@ -81,7 +81,7 @@ int printArr(int arr[4][4]) { // example 20-1
 int dalPang(void);
 
 int main() {
-    // example 20-2 달팽이 배열
+    <!--// example 20-2 달팽이 배열-->
     dalPang();
 }
 
@@ -99,7 +99,7 @@ int dalPang() {
         for (int i = 0; i < input; ++i) {
             val++;
             col = col+sw;
-//            printf("row:%d, col:%d\n", row, col);
+<!--//            printf("row:%d, col:%d\n", row, col);-->
             arr[row][col] = val;
         }
         input--;
@@ -111,7 +111,7 @@ int dalPang() {
         for (int j = 0; j < input; ++j) {
             val++;
             row = row+sw;
-//            printf("row:%d, col:%d\n", row, col);
+<!--//            printf("row:%d, col:%d\n", row, col);-->
             arr[row][col] = val;
         }
 
@@ -139,14 +139,14 @@ int baseBallGame(void);
 int main()
 {
 
-    getRandNum(); // example 20-3 난수
-    getRandEXNum(); // example 20-4-1 난수 응용
-    getDiceNumber(); // example 20-4-2 주사위
-    stoneGame(); // example 20-5 가위바위보 게임
-    baseBallGame(); // example 20-6 야구 게임
+    getRandNum(); <!--// example 20-3 난수-->
+    getRandEXNum(); <!--// example 20-4-1 난수 응용-->
+    getDiceNumber(); <!--// example 20-4-2 주사위-->
+    stoneGame(); <!--// example 20-5 가위바위보 게임-->
+    baseBallGame(); <!--// example 20-6 야구 게임-->
 
 }
-int getRandEXNum() { // example 20-4 난수씨앗
+int getRandEXNum() { <!--// example 20-4 난수씨앗-->
     int lenth = 0;
     srand((int) time(NULL));
     while (lenth < 5) {
@@ -156,7 +156,7 @@ int getRandEXNum() { // example 20-4 난수씨앗
     return 0;
 }
 
-int getDiceNumber() { // example 20-5 주사위
+int getDiceNumber() { <!--// example 20-5 주사위-->
     int lenth = 0;
     srand((int) time(NULL));
     while (lenth < 2) {
@@ -166,10 +166,10 @@ int getDiceNumber() { // example 20-5 주사위
     return 0;
 }
 
-int stoneGame() { // example 20-5 가위바위보 게임
+int stoneGame() { <!--// example 20-5 가위바위보 게임
     int com, you, res, wins = 0, lose =0, same = 0;
 
-    for (int i = 0; i < 7; ++i) { // example 20-5 가위바위보 게임
+    for (int i = 0; i < 7; ++i) {
         srand((int) time(NULL));
 
         printf("바위는 1, 가위는 2, 보는 3 : ");
@@ -195,7 +195,7 @@ int stoneGame() { // example 20-5 가위바위보 게임
     return 0;
 }
 
-int baseBallGame() { // example 20-6 base ball
+int baseBallGame() { <!--// example 20-6 base ball-->
     srand((int) time(NULL));
 
     int you[3], com[3] = { (rand()%9)+1, (rand()%9)+1, (rand()%9)+1 };
@@ -214,7 +214,7 @@ int baseBallGame() { // example 20-6 base ball
             }
             else {
                 for (int j = 0; j < 3; ++j) {
-//                    printf("com : %d, you :  %d\n", com[i], you[j]);
+<!--//                    printf("com : %d, you :  %d\n", com[i], you[j]); -->
                     if (com[i] == you[j]) {
                         ball++;
                     }
