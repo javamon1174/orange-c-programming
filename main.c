@@ -234,7 +234,6 @@ int writeMyInfo() { // example 24-1-1, 21-1-2
 */
 
 /* chapter 25 -------------------------------------------------------------------------------------------
-*/
 int printReverseFackageWord(void);
 int insertIntForever(void);
 
@@ -293,13 +292,60 @@ int insertIntForever() { // example 25-2-2
 
     return 0;
 }
-
+*/
 /* chapter 26 -------------------------------------------------------------------------------------------
+int AddAndMulMacro();
+int getCircleSize();
+int chkMAXValue();
+
 int main() {
+    // example 26-1-1
+    AddAndMulMacro();
+
+    // example 26-1-2
+    getCircleSize();
+
+    // example 26-1-3
+    chkMAXValue();
+
+    return 0;
+}
+int chkMAXValue() {
+    #define MAX(a, b) ((a) > (b) ? (a) : (b))
+    #define MIN(a, b) ((a) < (b) ? (a) : (b))
+
+    int num1, num2;
+    printf("두개의 정수를 입력해주세요 : ");
+    scanf("%d %d", &num1, &num2);
+
+    printf("%d값이 %d보다 큰 값입니다.", MAX(num1, num2), MIN(num1, num2));
+
+    return 0;
+}
+
+int getCircleSize() {
+    #define PI 3.1415
+    #define AREA(R) ((R*R)*PI)
+
+    double rad = 2.1;
+    printf("반지름 : %g, 원의 넓이 : %g\n", rad, AREA(rad));
+
+    return 0;
+}
+
+int AddAndMulMacro() {
+    #define ADD(x, y, z)    (x+y+z)
+    #define MUL(x, y, z)    (x*y*z)
+
+    int add = ADD(2, 4, 6);
+    int mul = MUL(2, 4, 6);
+
+    printf("덧셈 결과 : %d\n", add);
+    printf("곱셈 결과 : %d\n", mul);
+
     return 0;
 }
 */
-
 /* chapter 27 -------------------------------------------------------------------------------------------
 int main() {
     return 0;
