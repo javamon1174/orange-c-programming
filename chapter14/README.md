@@ -15,9 +15,9 @@
 
 ### const int * const ptr=&num 으로 선언하면 주소와 값 모두 변경이 불가하다.
 
-### call by reference 나무위키 : https://namu.wiki/w/%EC%B0%B8%EC%A1%B0%EC%97%90%20%EC%9D%98%ED%95%9C%20%ED%98%B8%EC%B6%9C
+### call by reference 나무위키 : [link](https://namu.wiki/w/%EC%B0%B8%EC%A1%B0%EC%97%90%20%EC%9D%98%ED%95%9C%20%ED%98%B8%EC%B6%9C)
 ### call by reference 데니스 리치의 코멘트
-    - https://blog.naver.com/han95173/220934411280
+    - [link](https://blog.naver.com/han95173/220934411280)
     - C언어 에서는 call by reference를 흉내낼 뿐.
 
 ```c
